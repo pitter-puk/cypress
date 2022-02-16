@@ -87,9 +87,9 @@ export const syncEnvToCurrentDomain = (env: Cypress.ObjectLike) => {
 }
 
 export const preprocessConfig = (config: Cypress.Config) => {
-  return preprocessConfigOrEnvObj(config)
+  return preprocessConfigOrEnvObj(config) as Cypress.Config
 }
 
 export const preprocessEnv = (env: Cypress.ObjectLike) => {
-  return preprocessConfigOrEnvObj(env)
+  return preprocessConfigOrEnvObj(env) as Cypress.ObjectLike
 }
